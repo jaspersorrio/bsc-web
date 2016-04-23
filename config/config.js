@@ -1,6 +1,9 @@
 var path = require('path'),
     rootPath = path.normalize(__dirname + '/..'),
-    env = process.env.NODE_ENV || 'development';
+    env = process.env.NODE_ENV || 'production';
+    
+console.log(env);
+
 
 var config = {
   development: {
@@ -8,7 +11,7 @@ var config = {
     app: {
       name: 'bsc-web'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 1234,
   },
 
   test: {
@@ -16,7 +19,7 @@ var config = {
     app: {
       name: 'bsc-web'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 1234,
   },
 
   production: {
@@ -24,7 +27,7 @@ var config = {
     app: {
       name: 'bsc-web'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 1234,
   }
 };
 
