@@ -1,0 +1,46 @@
+html, body, div, p{
+  font-family: "Avenir";
+}
+
+body{
+  margin: 0px;
+}
+
+@font-face {
+font-family: 'Avenir';
+src: url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+     url('../fonts/AvenirNextLTPro-Regular.ttf')  format('truetype'),
+     url('../fonts/AvenirNextLTPro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+font-family: 'Brush';
+src: url('../fonts/cheddar jack.woff') format('woff'),
+     url('../fonts/cheddar jack.ttf')  format('truetype'),
+     url('../fonts/cheddar jack.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+.toolbar{
+  height: 56px;
+  border-bottom: 3px solid grey;
+}
+
+.logo{
+  max-width: 150px;
+}
+
+.logo-title{
+  font-size: 28px !important;
+}
+
+.tagline-container{
+  height: 300px;
+}
+
+.tagline {
+    font-size: 54px !important;
+    font-weight: lighter;
+    font-family: "Brush";
+    color: rgba(0,0,0,0.78);
+}
